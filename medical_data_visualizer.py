@@ -2,7 +2,6 @@ import pandas as pd
 import seaborn as naman
 import matplotlib.pyplot as plt
 import numpy as np
-
 # 1
 df = pd.read_csv("medical_examination.csv")
 
@@ -24,8 +23,6 @@ def draw_cat_plot():
     # 7,8
 
     fig=naman.catplot(data=df_cat,hue='Value',y='total',x='variable',kind="bar",col='cardio')
-    
-    
 
     # 9
     plt.savefig('catplot.png')
